@@ -1,0 +1,2342 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+
+::selection {
+  background-color: var(--navbar-background);
+  color: white;
+}
+
+:root {
+  --navbar-background: #1e1e1e;
+}
+
+/* <=============================================== Navbar Coding Here ===============================================> */
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: var(--navbar-background);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 55px;
+  transition: 0.5s ease;
+  z-index: 999;
+}
+.nav_logo {
+  width: 150px;
+  height: 100%;
+  cursor: pointer;
+}
+.nav_logo p.peil {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  position: absolute;
+  top: 10%;
+}
+.nav_logo p.dermac {
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 15%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  transition: .6s ease;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  transition: 0.3s ease;
+  font-weight: 600;
+  display: flex;
+}
+
+nav ul li a i {
+  font-size: 18px;
+}
+nav ul li a span {
+  display: inline-block;
+  width: 15px;
+  border-radius: 50px;
+  height: 15px;
+  background-color: white;
+  color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -5px 0 0 0px;
+  font-size: 12px;
+  font-weight: 800;
+}
+nav ul li a:hover {
+  color: rgb(123, 123, 123);
+}
+.cross-icon{
+  font-size: 30px;
+  color: white;
+  display: none;
+  z-index: 999;
+  position: absolute;
+  left: 80%;
+  top: 5%;
+}
+.md-icons-holder{
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 75px;
+}
+nav .cart-md a{
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  transition: 0.3s ease;
+  font-weight: 600;
+  display: flex;
+}
+nav .cart-md a span{
+  display: inline-block;
+  width: 15px;
+  border-radius: 50px;
+  height: 15px;
+  background-color: white;
+  color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -5px 0 0 0px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.hamburger-menu{
+  font-size: 28px;
+  color: white;
+}
+/* <====================================================================================================================> */
+/* <=============================================== Homepage Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+
+
+
+/* <=============================================== Herobox Coding Here ===============================================> */
+
+.herobox {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./Assests/slider\ 1.png");
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* <=============================================== Section 1 Coding Here ===============================================> */
+.section-1 {
+  width: 100%;
+  height: 105vh;
+  background-color: white;
+  position: relative;
+}
+.section-1 h1 {
+  font-size: 40px;
+  font-weight: 800;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.row {
+  width: 75%;
+  height: 65%;
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.product_1 {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.image_wrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_wrapper img {
+  width: 120%;
+  height: 120%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+.image_wrapper img:hover {
+  transform: scale(1.05);
+}
+.product_1 h2 {
+  font-size: 20px;
+  position: absolute;
+  font-weight: 800;
+  top: 56%;
+  left: 5%;
+}
+.product_1 p {
+  position: absolute;
+  top: 64%;
+  font-size: 13px;
+  text-align: justify;
+  width: 88%;
+  left: 5%;
+  line-height: 25px;
+}
+
+.product_1 a.addtocart {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 85%;
+  left: 5%;
+  transition: 0.5s ease;
+}
+.product_1 a.addtocart i {
+  margin-right: 5px;
+}
+
+.product_1 a.addtocart:hover {
+  background-color: #151515;
+}
+
+.product_1 a.buynow {
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transition: 0.5s ease;
+}
+.product_1 a.buynow:hover {
+  background-color: #151515;
+}
+
+/* <=============================================== Section 2 Coding Here ===============================================> */
+
+.section-2 {
+  width: 100%;
+  height: 140vh;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+.section-2 h2.sub_heading_section2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  font-weight: 800;
+  color: rgb(36, 36, 36);
+}
+.section-2 h1.main_heading_section2 {
+  position: absolute;
+  top: 2.5%;
+  font-weight: 900;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 80px;
+  color: #744d2d;
+}
+.section-2 p.paragraph-section-2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  text-transform: uppercase;
+  top: 13%;
+  color: rgb(174, 174, 174);
+}
+.section2_image_wrapper {
+  width: 20%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section2_image_wrapper img {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(1deg);
+  position: absolute;
+}
+.left-section-2 {
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  bottom: 0%;
+  display: flex;
+  flex-direction: column;
+}
+.left-section-2 .feature_1 {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 20%;
+}
+.left-section-2 .feature_1 h2 {
+  font-size: 32px;
+  position: absolute;
+  left: 10%;
+}
+.left-section-2 .feature_1 p {
+  font-size: 22px;
+  position: absolute;
+  left: 10%;
+  bottom: 0%;
+  width: 80%;
+  text-align: left;
+}
+.left-section-2 .feature_2 {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 55%;
+}
+.left-section-2 .feature_2 h2 {
+  font-size: 32px;
+  position: absolute;
+  left: 10%;
+}
+.left-section-2 .feature_2 p {
+  font-size: 22px;
+  position: absolute;
+  left: 10%;
+  bottom: 0%;
+  width: 80%;
+  text-align: left;
+}
+
+.right-section-2 {
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+}
+
+.right-section-2 .feature_1 {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 20%;
+}
+.right-section-2 .feature_1 h2 {
+  font-size: 32px;
+  position: absolute;
+  right: 10%;
+}
+.right-section-2 .feature_1 p {
+  font-size: 22px;
+  position: absolute;
+  right: 10%;
+  bottom: 25%;
+  width: 80%;
+  text-align: right;
+}
+.right-section-2 .feature_2 {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  top: 55%;
+}
+.right-section-2 .feature_2 h2 {
+  font-size: 32px;
+  position: absolute;
+  right: 10%;
+}
+.right-section-2 .feature_2 p {
+  font-size: 22px;
+  position: absolute;
+  right: 10%;
+  bottom: 20%;
+  width: 80%;
+  text-align: right;
+}
+
+/* <=============================================== Section 3 Coding Here ===============================================> */
+
+.section-3 {
+  width: 100%;
+  height: 60vh;
+  background-image: url("./Assests/section\ 3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  position: relative;
+}
+.section-3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) -34%,
+    rgba(91, 56, 16, 0.4990371148459384) 0%,
+    rgba(60, 61, 64, 0.5662640056022409) 100%
+  );
+  position: absolute;
+}
+.section-3 p.section3-p1 {
+  position: absolute;
+  color: rgb(190, 190, 190);
+  z-index: 2;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 18px;
+  top: 30%;
+}
+.section-3 p.section3-p2 {
+  position: absolute;
+  color: rgb(190, 190, 190);
+  z-index: 2;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 18px;
+  top: 45%;
+}
+.section-3 a {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 2px solid white;
+  color: white;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 25%;
+  transition: 0.3s ease;
+}
+.section-3 a:hover {
+  background-color: white;
+  color: #1e1e1e;
+}
+
+/* <=============================================== Section 4 Coding Here ===============================================> */
+
+.section-4 {
+  width: 100%;
+  height: 320vh;
+  background-color: white;
+  position: relative;
+}
+.info-1 {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 5%;
+}
+
+.info-wrapper {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  left: 5%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.info-1 .info-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info-1 h2 {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  font-weight: 800;
+  font-size: 30px;
+}
+.info-1 p {
+  width: 50%;
+  position: absolute;
+  left: 45%;
+  top: 22%;
+  text-align: justify;
+  line-height: 28px;
+  color: rgb(158, 158, 158);
+}
+.info-1 a {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  background-color: rgb(209, 209, 209);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 45%;
+  bottom: 10%;
+  color: #1e1e1e;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.info-1 a:hover {
+  background-color: rgb(190, 190, 190);
+  color: white;
+}
+.info-2 {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 28%;
+}
+.info-2 .info-wrapper {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  left: 60%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.info-2 .info-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info-2 h2 {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  font-weight: 800;
+  font-size: 30px;
+}
+.info-2 p {
+  width: 50%;
+  position: absolute;
+  left: 5%;
+  top: 22%;
+  text-align: justify;
+  line-height: 28px;
+  color: rgb(158, 158, 158);
+}
+.info-2 a {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  background-color: rgb(209, 209, 209);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 5%;
+  bottom: 10%;
+  color: #1e1e1e;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.info-2 a:hover {
+  background-color: rgb(190, 190, 190);
+  color: white;
+}
+
+.info-3 {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 52%;
+}
+.info-3 .info-wrapper {
+  width: 37%;
+  height: 100%;
+  position: absolute;
+  left: 5%;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-3 .info-wrapper img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+.info-3 h2 {
+  position: absolute;
+  left: 45%;
+  top: 10%;
+  font-weight: 800;
+  font-size: 30px;
+}
+.info-3 p {
+  width: 50%;
+  position: absolute;
+  left: 45%;
+  top: 22%;
+  text-align: justify;
+  line-height: 38px;
+  color: rgb(158, 158, 158);
+}
+.info-3 a {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  background-color: rgb(209, 209, 209);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 45%;
+  bottom: 10%;
+  color: #1e1e1e;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.info-3 a:hover {
+  background-color: rgb(190, 190, 190);
+  color: white;
+}
+
+.info-4 {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  top: 77%;
+}
+.info-4 .info-wrapper {
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  left: 60%;
+  overflow: hidden;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-4 .info-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info-4 h2 {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  font-weight: 800;
+  font-size: 30px;
+}
+.info-4 p {
+  width: 50%;
+  position: absolute;
+  left: 5%;
+  top: 22%;
+  text-align: justify;
+  line-height: 32px;
+  color: rgb(158, 158, 158);
+}
+.info-4 a {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  background-color: rgb(209, 209, 209);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 5%;
+  bottom: 5%;
+  color: #1e1e1e;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.info-4 a:hover {
+  background-color: rgb(190, 190, 190);
+  color: white;
+}
+
+/* <=============================================== Footer Coding Here ===============================================> */
+
+.footer {
+  width: 100%;
+  height: 60vh;
+  background-image: url("./Assests/footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  background-position: center;
+  overflow: hidden;
+  z-index: 80;
+}
+.footer::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.108);
+  position: absolute;
+}
+.footer h1.footer-h1 {
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  left: 5%;
+  top: 20%;
+  z-index: 50;
+}
+.footer p.footer-p {
+  position: absolute;
+  left: 5%;
+  top: 38%;
+  width: 25%;
+  color: rgb(243, 243, 243);
+  font-size: 14px;
+  line-height: 28px;
+  z-index: 50;
+}
+.social_links {
+  width: 6.5%;
+  height: 50px;
+  position: absolute;
+  left: 5%;
+  top: 61%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 50;
+}
+.icon1 {
+  width: 45px;
+  height: 45px;
+  background-color: #1e1e1e;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  transition: 0.2s ease;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+}
+.icon1:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.quicklinks {
+  width: 220px;
+  height: 300px;
+  position: absolute;
+  left: 34%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.quicklinks h2 {
+  font-size: 32px;
+  color: white;
+  z-index: 50;
+}
+.quicklinks a {
+  text-decoration: none;
+  margin: 15px 0px;
+  color: white;
+  z-index: 50;
+}
+
+.contactus {
+  width: 220px;
+  height: 300px;
+  position: absolute;
+  left: 51%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.contactus h2 {
+  font-size: 32px;
+  color: white;
+  z-index: 50;
+}
+.contactus p {
+  text-decoration: none;
+  margin: 15px 0px;
+  color: white;
+  z-index: 50;
+}
+.contactus p i {
+  margin: 0 3px;
+}
+
+.contact-footer .footer .map{
+  width: 350px;
+  height: 220px;
+  position: absolute;
+  left: 72%;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  z-index: 50;
+}
+.footer .map iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0%;
+}
+.sub-footer {
+  width: 100%;
+  height: 60px;
+  border-top: 2px solid #1e1e1e34;
+  position: absolute;
+  bottom: 0%;
+  z-index: 55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+
+/* <====================================================================================================================> */
+/* <=============================================== Product Page Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+
+/* <=============================================== Product Herobox Started Here ===============================================> */
+
+.product-herobox{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #939393;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slider-1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.slider-1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center ;
+  position: absolute;
+}
+.slider-1 h1{
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  font-size: 90px;
+  font-weight: 800;
+  left: 4%;
+  color: white;
+}
+.black-product-box{
+  width: 300px;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  top: 47%;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+}
+.slider-1 p{
+  position: absolute;
+  top: 58%;
+  line-height: 28px;
+  left: 4%;
+  width: 36%;
+  text-align: left;
+  font-size: 16px;
+  color: white;
+}
+.slider-1 a{
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 55px;
+  background-color: #1e1e1e;
+  color: white;
+  text-decoration: none;
+  top: 69%;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: .3s ease;
+}
+.slider-1 a:hover{
+  background-color: #151515;
+
+}
+
+.slider-2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.slider-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center ;
+  position: absolute;
+}
+.slider-2 h1{
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  font-size: 90px;
+  font-weight: 800;
+  left: 4%;
+  color: white;
+}
+.black-product-box{
+  width: 300px;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  top: 47%;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+}
+.slider-2 p{
+  position: absolute;
+  top: 58%;
+  line-height: 28px;
+  left: 4%;
+  width: 36%;
+  text-align: left;
+  font-size: 16px;
+  color: white;
+}
+.slider-2 a{
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 55px;
+  background-color: #1e1e1e;
+  color: white;
+  text-decoration: none;
+  top: 69%;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: .3s ease;
+}
+.slider-2 a:hover{
+  background-color: #151515;
+
+}
+.slider-3 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.slider-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+}
+.slider-3 h1 {
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  font-size: 90px;
+  font-weight: 800;
+  left: 4%;
+  color: rgb(28, 28, 28);
+}
+.black-product-box {
+  width: 300px;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  top: 47%;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+}
+.slider-3 p {
+  position: absolute;
+  top: 58%;
+  line-height: 28px;
+  left: 4%;
+  width: 36%;
+  text-align: left;
+  font-size: 16px;
+  color: rgb(28, 28, 28);
+}
+.slider-3 a {
+  position: absolute;
+  display: inline-block;
+  width: 180px;
+  height: 55px;
+  background-color: #1e1e1e;
+  color: white;
+  text-decoration: none;
+  top: 69%;
+  left: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition: 0.3s ease;
+}
+.slider-3 a:hover {
+  background-color: #151515;
+}
+
+/* <=============================================== Product-Section-1 Started Here ===============================================> */
+
+.product-section-1{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+.product-section-1 h1.main-product-heading{
+  position: absolute;
+  top: 10%;
+  font-size: 42px;
+  left: 4%;
+  font-weight: 800;
+}
+.product-section-1-row{
+  width: 92%;
+  height: 450px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.product-section-col{
+  width: 24%;
+  height: 100%;
+  background-color: rgb(219, 219, 219);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image{
+  display: inline-block;
+  width: 100%;
+  height: 55%;
+  background-color: #1e1e1e;
+  overflow: hidden;
+}
+.product-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .3s ease;
+}
+.product-image img:hover{
+  transform: scale(1.1);
+}
+.product-section-col h2{
+  font-size: 20px;
+  width: 100%;
+  position: absolute;
+  top: 60%;
+  left: 6%;
+  font-weight: 800;
+}
+.product-section-col h4{
+  position: absolute;
+  top: 68%;
+  left: 6%;
+  width: 100px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 0 5px;
+  height: 23px;
+  background-color: #151515;
+  color: white;
+}
+.product-section-col:nth-child(4) h4{
+  width: 200px;
+}
+.product-section-col a.buy{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background-color: #151515;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 5%;
+  border-radius: 10px;
+  left: 50%;
+  transition: .4s ease;
+}
+.product-section-col a.buy:hover{
+  bottom: 7%;
+}
+.product-section-col a.add{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background-color: #151515;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: absolute;
+  bottom: 5%;
+  border-radius: 10px;
+  left: 6%;
+  transition: .4s ease;
+}
+.product-section-col a.add:hover{
+  bottom: 7%;
+}
+
+
+
+/* <====================================================================================================================> */
+/* <=============================================== Hemp 360 Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+
+/* <=============================================== Hemp Herobox Styling Started Here ===============================================> */
+
+.hemp-herobox{
+  width: 100%;
+  height: 120vh;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.left-area{
+  width: 50%;
+  height: 500px;
+  top: 25%;
+  position: relative;
+}
+.left-area .sm-images-row{
+  width: 120px;
+  height: 500px;
+  position: absolute;
+  left: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sm-img{
+  width: 100%;
+  height: 22%;
+  overflow: hidden;
+}
+.sm-images{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.preview-lg-image{
+  width: 72%;
+  height: 500px;
+  background-color: #1e1e1e;
+  position: absolute;
+  left: 22%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preview-lg-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: .2s linear;
+  position: absolute;
+}
+
+.right-area{
+  width: 50%;
+  height: 500px;
+  position: relative;
+  top: 25%;
+}
+.hemp-herobox h1.product-heading{
+  position: absolute;
+  top: 6%;
+  font-size: 45px;
+  font-weight: 800;
+}
+.hemp-herobox p.product-info{
+  position: absolute;
+  top: 20%;
+  width: 85%;
+  text-align: justify;
+  color: rgb(173, 173, 173);
+  line-height: 30px;
+}
+.hemp-herobox p.sub-info{
+  position: absolute;
+  top: 53%;
+  font-weight: 800;
+}
+
+.hemp-herobox h3.price{
+  position: absolute;
+  top: 60%;
+  font-size: 40px;
+  
+}
+.right-area a.add{
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: #151515;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 75%;
+  transition: .2s ease;
+}
+.right-area a.add:hover{
+  background-color: #1e1e1e;
+}
+.right-area a.buy{
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  background-color: #151515;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 75%;
+  left: 22%;
+  transition: .2s ease;
+}
+.right-area a.buy:hover{
+  background-color: #1e1e1e;
+}
+
+/* <====================================================================================================================> */
+/* <=============================================== PEIL ExoHair Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+
+/* <=============================================== Hemp Herobox Styling Started Here ===============================================> */
+
+.exohair .hemp-herobox .right-area p.sub-info{
+  top: 60%;
+}
+.exohair .hemp-herobox .right-area h3.price{
+  top: 65%;
+}
+.exohair .hemp-herobox .right-area a.add{
+  top: 80%;
+}
+.exohair .hemp-herobox .right-area a.buy{
+  top: 80%;
+}
+
+
+/* <====================================================================================================================> */
+/* <=============================================== Hemp Learn More Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+/* <=============================================== Herobox Styling Started Here ===============================================> */
+
+.hemp-learn-herobox{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #151515;
+}
+.hemp-learn-herobox::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('./Assests/feature\ product.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 18%;
+}
+.hemp-learn-herobox h1{
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hemp-learn-herobox h2{
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 53%;
+  font-size: 55px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.hemp-learn-herobox p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 64%;
+  border: 2px solid white;
+  z-index: 5;
+}
+.hemp-learn-herobox p i{
+  margin: 0 5px;
+}
+
+/* <=============================================== Section 1 Styling Started Here ===============================================> */
+
+.hemp-learn-section-1{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+.hemp-learn-section-1 h1{
+  position: absolute;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  font-weight: 800;
+  word-spacing: -1px;
+}
+.video-box{
+  width: 92%;
+  height: 75%;
+  background-color: #151515;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  overflow: hidden;
+}
+.video-box video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* <=============================================== Section 2 Styling Started Here ===============================================> */
+
+.hemp-learn-section-2{
+  width: 100%;
+  height: 180vh;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-wrapper2-hemp-learn-section-2{
+  width: 45%;
+  left: 4%;
+  height: 550px;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-wrapper2-hemp-learn-section-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.blog-wrapper-hemp-learn-section-2{
+  width: 45%;
+  left: 4%;
+  height: 550px;
+  overflow: hidden;
+  position: absolute;
+  top: 53%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-wrapper-hemp-learn-section-2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-hemp-learn-section-2{
+  width: 47%;
+  height: 80%;
+  position: absolute;
+  left: 52%;
+  top: 10%;
+}
+.content-hemp-learn-section-2 h1{
+  font-size: 34px;
+  font-weight: 800;
+  height: 60px;
+  position: absolute;
+}
+.content-hemp-learn-section-2 h1::before{
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: #15151571;
+  position: absolute;
+  bottom: 0%;
+}
+.content-hemp-learn-section-2 p.content-p-1{
+  width: 85%;
+  text-align: justify;
+  position: absolute;
+  top: 8%;
+  line-height: 35px;
+  color: #939393;
+}
+.content-hemp-learn-section-2 p.content-p-2{
+  width: 85%;
+  text-align: justify;
+  position: absolute;
+  top: 72%;
+  line-height: 35px;
+  font-weight: 700;
+  color: #5c5c5c;
+}
+.content-hemp-learn-section-2 p.content-p-3{
+  width: 85%;
+  text-align: justify;
+  position: absolute;
+  top: 75%;
+  line-height: 35px;
+  font-weight: 700;
+  color: #5c5c5c;
+}
+.content-hemp-learn-section-2 p.content-p-4{
+  width: 85%;
+  text-align: justify;
+  position: absolute;
+  top: 79%;
+  line-height: 35px;
+  color: #5c5c5c;
+}
+.content-hemp-learn-section-2 a{
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 98%;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background-color: #1e1e1e;
+}
+.content-hemp-learn-section-2 a:hover{
+  background-color: #151515;
+}
+
+
+
+/* <====================================================================================================================> */
+/* <=============================================== PEIL Levamis Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+/* <=============================================== Herobox Styling Started Here ===============================================> */
+
+.levamis .hemp-herobox select{
+  width: 50%;
+  height: 50px;
+  padding: 0 5px;
+  outline: none;
+  position: absolute;
+  top: 53%;
+}
+.levamis .hemp-herobox .right-area p.sub-info{
+  top: 46%;
+}
+.levamis .hemp-herobox .right-area h3.price{
+  top: 65%;
+}
+.levamis .hemp-herobox .right-area a.add{
+  top: 78%;
+}
+.levamis .hemp-herobox .right-area a.buy{
+  top: 78%;
+}
+
+
+/* <====================================================================================================================> */
+/* <=============================================== Levamis Learn More Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+/* <=============================================== Herobox Styling Started Here ===============================================> */
+
+.levamis-learn-herobox{
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #151515;
+}
+.levamis-learn-herobox::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url('./Assests/Levamis\ Learn\ More.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  opacity: 18%;
+}
+.levamis-learn-herobox h1{
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.levamis-learn-herobox h2{
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 53%;
+  font-size: 55px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.levamis-learn-herobox p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  top: 64%;
+  border: 2px solid white;
+  z-index: 5;
+}
+.levamis-learn-herobox p i{
+  margin: 0 5px;
+}
+
+/* <=============================================== Section 1 Styling Started Here ===============================================> */
+
+.levamis-learn-section-1{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+}
+.levamis-learn-section-1 h1{
+  position: absolute;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  font-weight: 800;
+  word-spacing: -1px;
+}
+.info-box{
+  width: 92%;
+  height: 75%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info-1-levamis-learn-section-1{
+  width: 48%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.info-1-levamis-learn-section-1 img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+
+/* <=============================================== Section 2 Styling Started Here ===============================================> */
+
+.levamis-learn-section-2{
+  width: 100%;
+  height: 200vh;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-wrapper{
+  width: 45%;
+  left: 4%;
+  height: 550px;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-wrapper img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog-wrapper2{
+  width: 45%;
+  left: 4%;
+  height: 620px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-wrapper2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.content-levamis-learn-section-2{
+  width: 47%;
+  height: 80%;
+  position: absolute;
+  left: 52%;
+  top: 10%;
+}
+.content-levamis-learn-section-2 h1{
+  font-size: 34px;
+  font-weight: 800;
+  height: 60px;
+  position: absolute;
+}
+.content-levamis-learn-section-2 h1::before{
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: #15151571;
+  position: absolute;
+  bottom: 0%;
+}
+.content-levamis-learn-section-2 p.content-p-1{
+  width: 85%;
+  text-align: justify;
+  position: absolute;
+  top: 8%;
+  line-height: 35px;
+  color: #939393;
+}
+.content-levamis-learn-section-2 p.content-p-2{
+  width: 85%;
+  text-align: justify;
+  position: absolute;
+  top: 86%;
+  line-height: 35px;
+  font-weight: 700;
+  color: #5c5c5c;
+}
+
+.content-levamis-learn-section-2 a{
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 93%;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background-color: #1e1e1e;
+}
+.content-levamis-learn-section-2 a:hover{
+  background-color: #151515;
+}
+
+
+/* <====================================================================================================================> */
+/* <=============================================== ExoHair Learn More Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+/* <=============================================== Herobox Styling Started Here ===============================================> */
+
+.Exohair-learn-herobox {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #151515;
+}
+.Exohair-learn-herobox::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("./Assests/feature\ product\ 2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  opacity: 18%;
+}
+.Exohair-learn-herobox h1 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Exohair-learn-herobox h2 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 53%;
+  font-size: 55px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Exohair-learn-herobox p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 64%;
+  border: 2px solid white;
+  z-index: 5;
+}
+.Exohair-learn-herobox p i {
+  margin: 0 5px;
+}
+
+/* <=============================================== Section 2 Styling Started Here ===============================================> */
+
+.Exohair-learn-section-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-wrapper-exohair-learn-section-2 {
+  width: 60%;
+  left: 0%;
+  height: 600px;
+  overflow: hidden;
+  position: absolute;
+  top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-wrapper-exohair-learn-section-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content-Exohair-learn-section-2 {
+  width: 47%;
+  height: 80%;
+  position: absolute;
+  left: 52%;
+  top: 10%;
+}
+.content-Exohair-learn-section-2 h1 {
+  font-size: 34px;
+  font-weight: 800;
+  height: 60px;
+  position: absolute;
+  top: 5%;
+}
+.content-Exohair-learn-section-2 h1::before {
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: #15151571;
+  position: absolute;
+  bottom: 0%;
+}
+.content-Exohair-learn-section-2 p.content-p-1 {
+  width: 85%;
+  text-align: justify;
+  position: absolute;
+  top: 18%;
+  line-height: 40px;
+  color: #939393;
+}
+
+.content-Exohair-learn-section-2 a {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 90%;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background-color: #1e1e1e;
+}
+.content-Exohair-learn-section-2 a:hover {
+  background-color: #151515;
+}
+
+/* <====================================================================================================================> */
+/* <=============================================== ExoSkin Learn More Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+/* <=============================================== Herobox Styling Started Here ===============================================> */
+
+.Exoskin-learn-herobox {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #151515;
+}
+.Exoskin-learn-herobox::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("./Assests/feature\ product\ 1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  opacity: 18%;
+}
+.Exoskin-learn-herobox h1 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Exoskin-learn-herobox h2 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 53%;
+  font-size: 55px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Exoskin-learn-herobox p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  color: white;
+  border-radius: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 64%;
+  border: 2px solid white;
+  z-index: 5;
+}
+.Exoskin-learn-herobox p i {
+  margin: 0 5px;
+}
+
+/* <=============================================== Section 2 Styling Started Here ===============================================> */
+
+.Exoskin-learn-section-2 {
+  width: 100%;
+  height: 200vh;
+  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-wrapper-Exoskin-learn-section-2 {
+  width: 45%;
+  left: 4%;
+  height: 550px;
+  overflow: hidden;
+  position: absolute;
+  top: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-wrapper-Exoskin-learn-section-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.blog-wrapper2-Exoskin-learn-section-2 {
+  width: 45%;
+  left: 4%;
+  height: 550px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-wrapper2-Exoskin-learn-section-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content-Exoskin-learn-section-2 {
+  width: 47%;
+  height: 80%;
+  position: absolute;
+  left: 52%;
+  top: 8%;
+}
+.content-Exoskin-learn-section-2 h1 {
+  font-size: 34px;
+  font-weight: 800;
+  height: 60px;
+  position: absolute;
+}
+.content-Exoskin-learn-section-2 h1::before {
+  content: "";
+  width: 300px;
+  height: 2px;
+  background-color: #15151571;
+  position: absolute;
+  bottom: 0%;
+}
+.content-Exoskin-learn-section-2 p.content-p-1 {
+  width: 85%;
+  text-align: justify;
+  position: absolute;
+  top: 8%;
+  line-height: 35px;
+  color: #939393;
+}
+
+.content-Exoskin-learn-section-2 a {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  top: 98%;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background-color: #1e1e1e;
+}
+.content-Exoskin-learn-section-2 a:hover {
+  background-color: #151515;
+}
+
+
+/* <====================================================================================================================> */
+/* <=============================================== Gallery Page Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+/* <=============================================== Herobox Styling Started Here ===============================================> */
+
+.gallery-herobox {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #151515;
+} 
+.gallery-herobox::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("./Assests/gallery\ 2.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  opacity: 18%;
+}
+.gallery-herobox h1 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.gallery-herobox h2 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 53%;
+  font-size: 55px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* <=============================================== Section 1 Styling Started Here ===============================================> */
+
+.gallery-section-1{
+  width: 100%;
+  height: 160vh;
+  background-color: white;
+  position: relative;
+}
+.gallery-section-1 h1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  font-size: 52px;
+  font-weight: 800;
+}
+.images-gallery-row-1{
+  width: 92%;
+  height: 420px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+}
+.galley-col{
+  width: 32%;
+  height: 100%;
+  overflow: hidden;
+}
+.galley-col img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.images-gallery-row-1:nth-child(3){
+  top: 53%;
+}
+
+
+/* <====================================================================================================================> */
+/* <=============================================== About Page Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+/* <=============================================== Herobox Styling Started Here ===============================================> */
+
+.about-herobox {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #151515;
+}
+.about-herobox::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("./Assests/about.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  opacity: 18%;
+}
+.about-herobox h1 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about-herobox h2 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 53%;
+  font-size: 55px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-section-1{
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  position: relative;
+}
+.about-section-1 h1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  font-size: 45px;
+  font-weight: 800;
+}
+.about-section-1 p{
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25%;
+  color: #9e9e9e;
+  text-align: center;
+  line-height: 32px;
+}
+
+
+/* <====================================================================================================================> */
+/* <=============================================== Contact Page Styling Started Here ===============================================> */
+/* <====================================================================================================================> */
+
+/* <=============================================== Herobox Styling Started Here ===============================================> */
+
+.contact-herobox {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  background-color: #151515;
+}
+.contact-herobox::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("./Assests/Contact\ us\ .jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  opacity: 18%;
+}
+.contact-herobox h1 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact-herobox h2 {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  top: 53%;
+  font-size: 55px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* <=============================================== Section 1 Styling Started Here ===============================================> */
+
+.contact-section-1{
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+  position: relative;
+}
+.contact-section-1 h1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10%;
+  font-size: 45px;
+  font-weight: 800;
+}
+.contact-row{
+  width: 90%;
+  height: 180px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-col{
+  width: 32%;
+  height: 100%;
+  position: relative;
+}
+.contact-col i.icon-1{
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 5%;
+  color: #5c5c5c;
+}
+.contact-col h2{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35%;
+  font-size: 30px;
+}
+.contact-col p{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 60%;
+}
+.contact-col p i.fa-whatsapp{
+  font-size: 22px;
+  margin: 0 5px;
+}
+.contact-col:nth-child(3) p{
+  text-align: center;
+}
+
